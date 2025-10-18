@@ -1,0 +1,175 @@
+.info-bar{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: rgb(251, 115, 4);
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+
+    
+}
+.about{
+    height: 30px;
+    width: 70px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: aqua;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+.about-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 10px;
+     margin-top: 40px;
+}
+
+.info{
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid white;
+    position: relative;
+    color: rgb(253, 116, 4);
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    margin: 40px;
+    left: 34%;
+    bottom: 30px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+.info::after,.info::before{
+    content: '';
+    position: absolute;
+    height: 30vh;
+    width: 30vw;
+    background-image: conic-gradient(from 0deg, red,rgb(55, 255, 0),rgb(66, 0, 128),rgb(237, 6, 44));
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    top: 110px;
+    border-radius: 20px;
+    animation: move 3s ease-in 0s infinite ;
+  
+}
+.info::before{
+    opacity: 0.7;
+    filter: blur(1.5rem);
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false ;
+}
+
+@keyframes move {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+
+
+body{
+    background: black;
+    color: white;
+}
+.area{
+    border: 1px solid black;
+    background-color: orange;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.text{
+     background-color: orange;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#submit{
+    height: 30px;
+    width: 60px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: orange;
+    background-color: black;
+}
+
+.img{
+    height: 300px;
+   width: 300px;
+   background-image: url("/images/dibya\ .jpg");
+   background-size: cover;
+   border: 1px solid white;
+   border-radius: 100%;
+   margin-left: 48%;
+   position: relative;
+   right: 100px;
+}
+.img::after,.img::before{
+    content: "";
+    position: absolute;
+     height: 300px;
+   width: 300px;
+   background-image: conic-gradient(transparent 40%,rgb(64, 1, 255));
+   translate: -50%-50%;
+   padding: 6px;
+  top: 150px;
+  left: 150px;
+  z-index: -1;
+  border-radius: 100%;
+  border: none;
+  animation: spin 1s ease-in 0s infinite;
+overflow: hidden;
+
+}
+.img::before{
+     opacity: 0.7;
+    filter: blur(0.8rem);
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.nav-bar{
+    width: 100%;
+    border: 1px solid black;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}

@@ -125,7 +125,7 @@ body{
 .img{
     height: 300px;
    width: 300px;
-   background-image: url("/images/dibya\ .jpg");
+   background-image: url("./image/gyana\ photo.jpeg");
    background-size: cover;
    border: 1px solid white;
    border-radius: 100%;

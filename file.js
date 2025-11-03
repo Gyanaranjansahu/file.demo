@@ -9,10 +9,9 @@ button.addEventListener("click",()=>{
             val.after(bar);
             con=false;
         }
-        else{ 
-            
-           button.after(val);
-           console.log("false")
+        else{
+            con=false;
+            val.before(bar);
         }
     })
 })

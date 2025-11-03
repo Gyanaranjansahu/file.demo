@@ -7,10 +7,9 @@ button.addEventListener("click",()=>{
     menu.forEach((val)=>{
         if(con=true){
             val.after(bar);
-            console.log("true")
             con=false;
         }
-        else{
+        else{ 
             
            button.after(val);
            console.log("false")
